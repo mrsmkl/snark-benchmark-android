@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         var view = findViewById<TextView>(R.id.messageField)
         view.text = "Running benchmark, this will take few minutes"
-        var a = RustBench()
+        var a = Bench()
         var r = a.runBench()
         view.text = r
     }
